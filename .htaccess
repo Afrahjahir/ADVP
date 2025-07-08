@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# ✅ Internally rewrite clean URLs like /about-us to about-us.html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/\.]+)$ $1.html [NC,L]
+
+# ❌ Block direct browser access to .html (show 404)
+RewriteCond %{THE_REQUEST} "\s/[^ ]+\.html\s" [NC]
+RewriteRule ^[^/]+\.html$ - [R=404,L]
