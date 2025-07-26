@@ -394,7 +394,7 @@ body{
 
 .section-row .section-title{
 	text-align: center;
-	max-width: 800px;
+	max-width: 700px;
 	margin: 0 auto;
 }
 
@@ -3528,7 +3528,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .page-single-post{
-	padding: 50px 0;
+	padding: 100px 0;
 }
 
 .post-image{
@@ -3590,8 +3590,7 @@ header.main-header .header-sticky.active{
 }
 
 .post-entry h3{
-	font-size: 23px;
-	text-transform: capitalize;
+	font-size: 40px;
 }
 
 .post-entry h4{
